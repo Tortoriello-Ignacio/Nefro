@@ -3,309 +3,497 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Laboratorio de Nefrología Experimental A. Lanari</title>
-  <meta
-    name="description"
-    content="Sitio institucional del Laboratorio de Nefrología Experimental A. Lanari."
+
+  <meta 
+    name="description" 
+    content="Sitio institucional del Laboratorio de Nefrología Experimental A. Lanari." 
   />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=4" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png?v=4" />
+  <link rel="apple-touch-icon" href="assets/favicon.png?v=4" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="page-layout">
+
     <!-- SIDEBAR -->
     <aside class="sidebar">
-      <div class="sidebar-top">
-        <div class="logo-mark">
-          <div class="logo-circle">
-            <span>LN</span>
-          </div>
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M24 12c-7 0-12 6-12 14 0 9 5 16 12 22 2 2 5 0 5-3V17c0-3-2-5-5-5Z" />
+            <path d="M40 12c7 0 12 6 12 14 0 9-5 16-12 22-2 2-5 0-5-3V17c0-3 2-5 5-5Z" />
+            <path d="M29 30h6" />
+            <path d="M32 30v20" />
+          </svg>
         </div>
 
-        <div class="brand-block">
-          <h1>LABORATORIO DE<br />NEFROLOGÍA<br />EXPERIMENTAL<br />A. LANARI</h1>
-          <p>Ciencia que transforma la salud renal</p>
-        </div>
+        <h1>
+          Laboratorio de<br />
+          Nefrología<br />
+          Experimental<br />
+          A. Lanari
+        </h1>
+
+        <p>Ciencia que transforma la salud renal</p>
       </div>
 
       <nav class="sidebar-nav">
-        <a href="#inicio" class="nav-link active">Inicio</a>
-        <a href="#laboratorio" class="nav-link">Sobre el Laboratorio</a>
-        <a href="#investigacion" class="nav-link">Investigación</a>
-        <a href="#servicios" class="nav-link">Servicios</a>
-        <a href="#publicaciones" class="nav-link">Publicaciones</a>
-        <a href="#lineas" class="nav-link">Líneas Estratégicas</a>
-        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="#inicio" class="nav-link active">
+          <span>⌂</span>
+          Inicio
+        </a>
+
+        <a href="#laboratorio" class="nav-link">
+          <span>○</span>
+          Sobre el Laboratorio
+        </a>
+
+        <a href="#investigacion" class="nav-link">
+          <span>⌬</span>
+          Investigación
+        </a>
+
+        <a href="#servicios" class="nav-link">
+          <span>◇</span>
+          Servicios
+        </a>
+
+        <a href="#publicaciones" class="nav-link">
+          <span>▤</span>
+          Publicaciones
+        </a>
+
+        <a href="#lineas" class="nav-link">
+          <span>◎</span>
+          Líneas Estratégicas
+        </a>
+
+        <a href="#contacto" class="nav-link">
+          <span>✉</span>
+          Contacto
+        </a>
       </nav>
 
       <div class="sidebar-footer">
-        <a href="#contacto" class="sidebar-cta">Intranet</a>
-        <p>Comprometidos con la salud pública y la comunidad desde 1949</p>
+        <div class="footer-line"></div>
+        <p>
+          Comprometidos con la salud pública y la comunidad desde 1949
+        </p>
       </div>
     </aside>
 
-    <!-- MAIN -->
+    <!-- MAIN CONTENT -->
     <main class="main-content">
+
       <!-- HERO -->
-      <section id="inicio" class="section hero-section">
-        <div class="hero-grid">
-          <div class="hero-copy reveal">
-            <span class="eyebrow">Desde 1987 · Investigación, docencia y asistencia</span>
-            <h2>
-              Conocimiento<br />
-              que mejora<br />
-              <span>la salud renal</span>
-            </h2>
-            <p>
-              Integramos biología molecular, bioquímica y ciencia de datos para generar
-              evidencia que transforma la práctica clínica y la salud de nuestra comunidad.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#laboratorio" class="primary-btn">Conocer más</a>
-              <a href="#lineas" class="secondary-btn">Nuestras líneas de investigación</a>
-            </div>
+      <section id="inicio" class="hero-section section">
+        <div class="hero-copy reveal">
+          <div class="hero-meta">
+            <span>Desde 1987</span>
+            <p>Investigación, docencia y asistencia</p>
           </div>
 
-          <div class="hero-visual reveal">
-            <div class="hero-image-card lab-image">
-              <img
-                src="assets/lab-banner.jpg"
-                alt="Laboratorio moderno con microscopios y equipamiento"
-              />
-            </div>
+          <h2>
+            Conocimiento<br />
+            que mejora<br />
+            <strong>la salud renal</strong>
+          </h2>
 
-            <div class="hero-image-card hospital-image">
-              <img
-                src="assets/hospital-lanari.jpg"
-                alt="Vista exterior del Hospital A. Lanari"
-              />
-            </div>
+          <p class="hero-description">
+            Integramos biología molecular, bioquímica y ciencia de datos para generar
+            evidencia que transforma la práctica clínica y la salud de nuestra comunidad.
+          </p>
 
-            <div class="floating-info-card">
-              <h3>Hospital A. Lanari</h3>
-              <p>Compromiso con la salud pública desde 1949</p>
-            </div>
+          <div class="hero-actions">
+            <a href="#laboratorio" class="primary-btn">Conocer más</a>
+            <a href="#lineas" class="secondary-btn">Nuestras líneas de investigación</a>
           </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <article class="media-card lab-card">
+            <img 
+              src="assets/lab-banner.jpg" 
+              alt="Laboratorio moderno con microscopios y equipamiento científico" 
+            />
+
+            <div class="image-fallback">
+              <span>Laboratorio</span>
+              <p>Subí una imagen en assets/lab-banner.jpg</p>
+            </div>
+          </article>
+
+          <article class="media-card hospital-card">
+            <img 
+              src="assets/hospital-lanari.jpg" 
+              alt="Vista exterior del Hospital A. Lanari" 
+            />
+
+            <div class="image-fallback">
+              <span>Hospital A. Lanari</span>
+              <p>Subí una imagen en assets/hospital-lanari.jpg</p>
+            </div>
+
+            <div class="hospital-badge">
+              <div class="badge-icon">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M10 40V14h28v26" />
+                  <path d="M17 40V28h14v12" />
+                  <path d="M16 20h4M22 20h4M28 20h4M16 25h4M22 25h4M28 25h4" />
+                </svg>
+              </div>
+
+              <div>
+                <h3>Hospital A. Lanari</h3>
+                <p>Compromiso con la salud pública desde 1949</p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- SOBRE EL LABORATORIO -->
-      <section id="laboratorio" class="section reveal">
-        <div class="section-header">
-          <span class="eyebrow">Institucional</span>
-          <h3>Sobre el Laboratorio</h3>
+      <!-- SOBRE / TECNOLOGÍAS -->
+      <section id="laboratorio" class="section lab-section reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Institucional</span>
+          <h2>Sobre el Laboratorio</h2>
           <p>
             El Laboratorio de Nefrología Experimental A. Lanari articula asistencia,
             investigación, innovación y prestación de servicios, integrando herramientas
-            experimentales y analíticas para responder preguntas biomédicas de alto impacto.
+            experimentales, analíticas y computacionales para responder preguntas biomédicas
+            de alto impacto.
           </p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-icon">🩺</div>
-            <h4>Asistencial</h4>
-            <p>Enfoque integral del paciente renal con excelencia y compromiso.</p>
-          </article>
+        <div class="interconnected-layout">
+          <div class="activity-column">
+            <article class="activity-card clickable-card" data-activity="asistencial">
+              <div class="activity-icon kidney-icon">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <path d="M24 12c-8 0-13 7-13 15 0 10 6 18 14 24 2 2 5 0 5-3V18c0-3-3-6-6-6Z" />
+                  <path d="M40 12c8 0 13 7 13 15 0 10-6 18-14 24-2 2-5 0-5-3V18c0-3 3-6 6-6Z" />
+                  <path d="M30 32h4" />
+                  <path d="M32 32v20" />
+                </svg>
+              </div>
 
-          <article class="feature-card">
-            <div class="feature-icon">🔬</div>
-            <h4>Investigación</h4>
-            <p>Generamos conocimiento científico para impulsar nuevas terapias y soluciones.</p>
-          </article>
+              <div>
+                <h3>Asistencial</h3>
+                <p>Enfoque integral del paciente renal con excelencia y compromiso.</p>
+              </div>
 
-          <article class="feature-card">
-            <div class="feature-icon">💡</div>
-            <h4>Innovación</h4>
-            <p>Desarrollamos tecnologías de vanguardia para transformar descubrimientos en impacto.</p>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon">🤝</div>
-            <h4>Prestación de Servicios</h4>
-            <p>Brindamos servicios especializados a instituciones y profesionales.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- TECNOLOGÍAS / INVESTIGACIÓN -->
-      <section id="investigacion" class="section reveal">
-        <div class="section-header centered">
-          <span class="eyebrow">Tecnologías interconectadas</span>
-          <h3>Ciencia que se integra, conocimiento que impacta</h3>
-          <p>
-            La biología molecular, la bioquímica y la ciencia de datos se superponen y potencian
-            las distintas actividades del laboratorio.
-          </p>
-        </div>
-
-        <div class="diagram-layout">
-          <div class="activity-column left">
-            <article class="activity-card">
-              <h4>Asistencial</h4>
-              <p>Biomarcadores y herramientas para la práctica clínica.</p>
+              <button class="circle-arrow" type="button" aria-label="Ver detalle asistencial">→</button>
             </article>
 
-            <article class="activity-card">
-              <h4>Investigación</h4>
-              <p>Modelos experimentales y validación de hipótesis traslacionales.</p>
+            <article class="activity-card clickable-card" data-activity="investigacion">
+              <div class="activity-icon microscope-icon">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <path d="M26 12l10 10-7 7-10-10 7-7Z" />
+                  <path d="M32 28l10 10" />
+                  <path d="M18 48h30" />
+                  <path d="M25 48c0-8 6-14 14-14" />
+                  <path d="M38 40h12v8H38z" />
+                  <path d="M16 52h36" />
+                </svg>
+              </div>
+
+              <div>
+                <h3>Investigación</h3>
+                <p>Generamos conocimiento científico para impulsar nuevas terapias y soluciones.</p>
+              </div>
+
+              <button class="circle-arrow" type="button" aria-label="Ver detalle investigación">→</button>
             </article>
           </div>
 
-          <div class="diagram-center">
-            <div class="venn-diagram">
-              <div class="circle circle-a">
+          <div id="investigacion" class="tech-center">
+            <div class="tech-title">
+              <span>Tecnologías Interconectadas</span>
+              <p>Ciencia que se integra, conocimiento que impacta</p>
+            </div>
+
+            <div class="tech-network">
+              <div class="network-ring"></div>
+
+              <div class="hex-node node-top">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M18 8c8 4 12 8 12 16s-4 12-12 16" />
+                  <path d="M30 8c-8 4-12 8-12 16s4 12 12 16" />
+                  <path d="M18 16h12M18 24h12M18 32h12" />
+                </svg>
                 <span>Biología<br />Molecular</span>
               </div>
-              <div class="circle circle-b">
+
+              <div class="hex-node node-left">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M19 8h10" />
+                  <path d="M22 8v13L13 39h22l-9-18V8" />
+                  <path d="M17 32h14" />
+                </svg>
                 <span>Bioquímica</span>
               </div>
-              <div class="circle circle-c">
+
+              <div class="hex-node node-right">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                  <path d="M12 36V24" />
+                  <path d="M22 36V16" />
+                  <path d="M32 36V10" />
+                  <path d="M10 38h28" />
+                </svg>
                 <span>Ciencia<br />de Datos</span>
               </div>
-              <div class="diagram-core">Tecnologías<br />Interconectadas</div>
+
+              <div class="network-core">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <path d="M24 12c-7 0-12 6-12 14 0 9 5 16 12 22 2 2 5 0 5-3V17c0-3-2-5-5-5Z" />
+                  <path d="M40 12c7 0 12 6 12 14 0 9-5 16-12 22-2 2-5 0-5-3V17c0-3 2-5 5-5Z" />
+                  <path d="M29 30h6" />
+                  <path d="M32 30v20" />
+                </svg>
+              </div>
+
+              <span class="connector connector-left-top"></span>
+              <span class="connector connector-left-bottom"></span>
+              <span class="connector connector-right-top"></span>
+              <span class="connector connector-right-bottom"></span>
             </div>
           </div>
 
-          <div class="activity-column right">
-            <article class="activity-card">
-              <h4>Innovación</h4>
-              <p>Desarrollo tecnológico, integración y transferencia.</p>
+          <div class="activity-column">
+            <article class="activity-card clickable-card" data-activity="innovacion">
+              <div class="activity-icon bulb-icon">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <path d="M22 28c0-7 5-12 10-12s10 5 10 12c0 5-3 8-6 11v5h-8v-5c-3-3-6-6-6-11Z" />
+                  <path d="M27 50h10" />
+                  <path d="M29 56h6" />
+                  <path d="M16 28h-4M52 28h-4M21 15l-3-3M43 15l3-3" />
+                </svg>
+              </div>
+
+              <div>
+                <h3>Innovación</h3>
+                <p>Desarrollamos tecnologías de vanguardia para transformar descubrimientos en impacto.</p>
+              </div>
+
+              <button class="circle-arrow" type="button" aria-label="Ver detalle innovación">→</button>
             </article>
 
-            <article class="activity-card">
-              <h4>Prestación de Servicios</h4>
-              <p>Servicios especializados con soporte técnico y científico.</p>
+            <article class="activity-card clickable-card" data-activity="servicios">
+              <div class="activity-icon hands-icon">
+                <svg viewBox="0 0 64 64" aria-hidden="true">
+                  <path d="M19 30l9 9" />
+                  <path d="M45 30l-9 9" />
+                  <path d="M28 39c3 3 5 3 8 0" />
+                  <path d="M13 25l8-8 11 11" />
+                  <path d="M51 25l-8-8-11 11" />
+                  <path d="M22 42l-8 8" />
+                  <path d="M42 42l8 8" />
+                </svg>
+              </div>
+
+              <div>
+                <h3>Prestación de Servicios</h3>
+                <p>Colaboramos con instituciones y profesionales para brindar servicios especializados.</p>
+              </div>
+
+              <button class="circle-arrow" type="button" aria-label="Ver detalle servicios">→</button>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- SERVICIOS / PROYECTOS -->
-      <section id="servicios" class="section reveal">
-        <div class="section-header">
-          <span class="eyebrow">Proyectos destacados</span>
-          <h3>Aplicaciones y servicios del laboratorio</h3>
+      <!-- DETALLE ACTIVIDADES -->
+      <section id="servicios" class="section detail-section reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Detalle de actividades</span>
+          <h2>Ensayos, técnicas y capacidades</h2>
           <p>
-            Proyectos con abordajes ómicos, análisis cuantitativos y modelos predictivos
-            orientados a la nefrología experimental.
+            Seleccioná una actividad para ver qué se realiza en el laboratorio y qué técnicas
+            o ensayos pueden formar parte de cada eje de trabajo.
           </p>
         </div>
 
-        <div class="projects-grid">
+        <div class="detail-tabs">
+          <button class="detail-tab active" data-tab="asistencial">Asistencial</button>
+          <button class="detail-tab" data-tab="investigacion">Investigación</button>
+          <button class="detail-tab" data-tab="innovacion">Innovación</button>
+          <button class="detail-tab" data-tab="servicios">Prestación de Servicios</button>
+        </div>
+
+        <div class="detail-panels">
+          <article class="detail-panel active" data-panel="asistencial">
+            <div>
+              <h3>Asistencial</h3>
+              <p>
+                Apoyo a la evaluación integral del paciente renal mediante herramientas
+                bioquímicas, moleculares y analíticas orientadas a mejorar la caracterización
+                clínica y el seguimiento.
+              </p>
+            </div>
+
+            <ul>
+              <li>Evaluación de biomarcadores de daño renal.</li>
+              <li>Análisis bioquímico aplicado a muestras biológicas.</li>
+              <li>Soporte experimental para estratificación de riesgo.</li>
+              <li>Interpretación integrada de datos clínicos y experimentales.</li>
+            </ul>
+          </article>
+
+          <article class="detail-panel" data-panel="investigacion">
+            <div>
+              <h3>Investigación</h3>
+              <p>
+                Desarrollo de proyectos experimentales y traslacionales para comprender
+                mecanismos de enfermedad renal, progresión, inflamación, fibrosis y respuesta
+                terapéutica.
+              </p>
+            </div>
+
+            <ul>
+              <li>Biología molecular: PCR, qPCR, expresión génica.</li>
+              <li>Bioquímica de proteínas y metabolitos.</li>
+              <li>Modelos celulares y análisis funcional.</li>
+              <li>Estadística, visualización y análisis de datos ómicos.</li>
+            </ul>
+          </article>
+
+          <article class="detail-panel" data-panel="innovacion">
+            <div>
+              <h3>Innovación</h3>
+              <p>
+                Integración de nuevas tecnologías, automatización analítica y ciencia de datos
+                para transformar hallazgos experimentales en herramientas aplicables.
+              </p>
+            </div>
+
+            <ul>
+              <li>Desarrollo de flujos de análisis reproducibles.</li>
+              <li>Integración de datos multi-ómicos.</li>
+              <li>Modelos predictivos y tableros de visualización.</li>
+              <li>Transferencia de conocimiento a entornos clínicos y académicos.</li>
+            </ul>
+          </article>
+
+          <article class="detail-panel" data-panel="servicios">
+            <div>
+              <h3>Prestación de Servicios</h3>
+              <p>
+                Servicios especializados para grupos clínicos, instituciones académicas y
+                equipos de investigación que requieran soporte técnico-científico en nefrología
+                experimental.
+              </p>
+            </div>
+
+            <ul>
+              <li>Procesamiento y análisis de muestras biológicas.</li>
+              <li>Diseño de ensayos experimentales.</li>
+              <li>Asistencia en interpretación de resultados.</li>
+              <li>Informes técnicos y apoyo metodológico.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="lineas" class="section projects-section reveal">
+        <div class="section-heading compact-heading">
+          <div>
+            <span class="section-kicker">Líneas estratégicas</span>
+            <h2>Proyectos Destacados</h2>
+          </div>
+
+          <a href="#contacto" class="text-link">Consultar colaboración →</a>
+        </div>
+
+        <div class="project-grid">
           <article class="project-card">
-            <div class="project-graphic heatmap"></div>
-            <h4>Biomarcadores de progresión renal</h4>
+            <div class="mini-chart heatmap-chart"></div>
+            <h3>Biomarcadores de progresión renal</h3>
             <p>Identificación y validación de biomarcadores moleculares para detección temprana.</p>
+            <span>Biología molecular</span>
           </article>
 
           <article class="project-card">
-            <div class="project-graphic scatter"></div>
-            <h4>Nefropatías y medicina de precisión</h4>
+            <div class="mini-chart scatter-chart"></div>
+            <h3>Nefropatías y medicina de precisión</h3>
             <p>Estrategias moleculares y clínicas para enfermedades renales complejas.</p>
+            <span>Investigación traslacional</span>
           </article>
 
           <article class="project-card">
-            <div class="project-graphic linechart"></div>
-            <h4>Ciencia de datos aplicada a nefrología</h4>
-            <p>Modelos predictivos e inteligencia artificial para comprender y mejorar resultados.</p>
+            <div class="mini-chart line-chart"></div>
+            <h3>Ciencia de datos aplicada a nefrología</h3>
+            <p>Modelos predictivos e inteligencia artificial para mejorar resultados.</p>
+            <span>Ciencia de datos</span>
           </article>
         </div>
       </section>
 
       <!-- PUBLICACIONES -->
-      <section id="publicaciones" class="section reveal">
-        <div class="section-header">
-          <span class="eyebrow">Producción científica</span>
-          <h3>Publicaciones recientes</h3>
+      <section id="publicaciones" class="section publications-section reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Producción científica</span>
+          <h2>Publicaciones recientes</h2>
         </div>
 
         <div class="publication-list">
-          <article class="publication-item">
-            <h4>Integración de biomarcadores moleculares en daño renal temprano</h4>
+          <article>
+            <h3>Integración de biomarcadores moleculares en daño renal temprano</h3>
             <p>Revista de Investigación Biomédica · 2025</p>
           </article>
 
-          <article class="publication-item">
-            <h4>Modelado de progresión renal mediante herramientas de ciencia de datos</h4>
+          <article>
+            <h3>Modelado de progresión renal mediante ciencia de datos</h3>
             <p>Journal of Translational Nephrology · 2024</p>
           </article>
 
-          <article class="publication-item">
-            <h4>Plataformas bioquímicas aplicadas a medicina de precisión en nefrología</h4>
+          <article>
+            <h3>Plataformas bioquímicas aplicadas a medicina de precisión</h3>
             <p>Clinical Experimental Renal Studies · 2024</p>
           </article>
         </div>
       </section>
 
-      <!-- LÍNEAS -->
-      <section id="lineas" class="section reveal">
-        <div class="section-header">
-          <span class="eyebrow">Líneas estratégicas</span>
-          <h3>Áreas prioritarias de trabajo</h3>
-        </div>
-
-        <div class="lines-grid">
-          <article class="line-card">
-            <h4>Biología molecular renal</h4>
-            <p>Expresión génica, vías de señalización y mecanismos celulares.</p>
-          </article>
-
-          <article class="line-card">
-            <h4>Bioquímica traslacional</h4>
-            <p>Análisis de proteínas, metabolitos y validación experimental.</p>
-          </article>
-
-          <article class="line-card">
-            <h4>Ómicas y análisis integrativo</h4>
-            <p>Datos complejos, interacción de variables y biomarcadores.</p>
-          </article>
-
-          <article class="line-card">
-            <h4>Inteligencia analítica</h4>
-            <p>Visualización, modelado y soporte a la toma de decisiones.</p>
-          </article>
-        </div>
-      </section>
-
       <!-- CONTACTO -->
-      <section id="contacto" class="section reveal">
-        <div class="section-header">
-          <span class="eyebrow">Contacto</span>
-          <h3>Conectate con el laboratorio</h3>
+      <section id="contacto" class="section contact-section reveal">
+        <div class="section-heading">
+          <span class="section-kicker">Contacto</span>
+          <h2>Conectate con el laboratorio</h2>
           <p>
-            Podemos dejar esta sección como institucional, o en la próxima iteración te la
-            convierto en un formulario real.
+            Esta sección puede evolucionar luego a un formulario real de contacto,
+            solicitud de colaboración o carga de consultas técnicas.
           </p>
         </div>
 
         <div class="contact-grid">
-          <div class="contact-card">
-            <h4>Ubicación</h4>
+          <article>
+            <h3>Ubicación</h3>
             <p>Hospital A. Lanari</p>
             <p>Ciudad Autónoma de Buenos Aires</p>
-          </div>
+          </article>
 
-          <div class="contact-card">
-            <h4>Email</h4>
+          <article>
+            <h3>Email</h3>
             <p>laboratorio.nefrologia@lanari.edu.ar</p>
-          </div>
+          </article>
 
-          <div class="contact-card">
-            <h4>Teléfono</h4>
+          <article>
+            <h3>Teléfono</h3>
             <p>+54 11 0000-0000</p>
-          </div>
-
-          <div class="contact-card">
-            <h4>Horarios</h4>
-            <p>Lunes a Viernes · 8:00 a 17:00</p>
-          </div>
+          </article>
         </div>
       </section>
 
       <footer class="site-footer">
-        <p>© 2026 Laboratorio de Nefrología Experimental A. Lanari · Todos los derechos reservados.</p>
+        <p>
+          © 2026 Laboratorio de Nefrología Experimental A. Lanari · Sitio institucional.
+        </p>
       </footer>
     </main>
   </div>
