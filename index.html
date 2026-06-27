@@ -11,9 +11,9 @@
     content="Sitio institucional del Laboratorio de Nefrología Experimental A. Lanari." 
   />
 
-  <link rel="icon" type="image/png" href="assets/favicon.png?v=4" />
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png?v=4" />
-  <link rel="apple-touch-icon" href="assets/favicon.png?v=4" />
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=5" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png?v=5" />
+  <link rel="apple-touch-icon" href="assets/favicon.png?v=5" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -25,11 +25,13 @@
     <aside class="sidebar">
       <div class="sidebar-brand">
         <div class="brand-logo">
-          <svg viewBox="0 0 64 64" aria-hidden="true">
-            <path d="M24 12c-7 0-12 6-12 14 0 9 5 16 12 22 2 2 5 0 5-3V17c0-3-2-5-5-5Z" />
-            <path d="M40 12c7 0 12 6 12 14 0 9-5 16-12 22-2 2-5 0-5-3V17c0-3 2-5 5-5Z" />
-            <path d="M29 30h6" />
-            <path d="M32 30v20" />
+          <svg viewBox="0 0 80 80" aria-hidden="true">
+            <path d="M30 13C20.5 13 14 21.3 14 32.2c0 12.2 7.6 22.5 18.2 30.6 3 2.3 7.3.1 7.3-3.7V20.4c0-4.2-3.4-7.4-9.5-7.4Z" />
+            <path d="M50 13c9.5 0 16 8.3 16 19.2 0 12.2-7.6 22.5-18.2 30.6-3 2.3-7.3.1-7.3-3.7V20.4c0-4.2 3.4-7.4 9.5-7.4Z" />
+            <path d="M39.5 38h1" />
+            <path d="M40 38v27" />
+            <path d="M28.5 24c-3.2 2.3-5.1 6-5.1 10.3" />
+            <path d="M51.5 24c3.2 2.3 5.1 6 5.1 10.3" />
           </svg>
         </div>
 
@@ -172,27 +174,29 @@
         </div>
 
         <div class="interconnected-layout">
+
           <div class="activity-column">
-            <article class="activity-card clickable-card" data-activity="asistencial">
-              <div class="activity-icon kidney-icon">
-                <svg viewBox="0 0 64 64" aria-hidden="true">
-                  <path d="M24 12c-8 0-13 7-13 15 0 10 6 18 14 24 2 2 5 0 5-3V18c0-3-3-6-6-6Z" />
-                  <path d="M40 12c8 0 13 7 13 15 0 10-6 18-14 24-2 2-5 0-5-3V18c0-3 3-6 6-6Z" />
-                  <path d="M30 32h4" />
-                  <path d="M32 32v20" />
+            <button class="activity-card clickable-card" data-activity="asistencial" type="button">
+              <span class="activity-icon kidney-icon">
+                <svg viewBox="0 0 80 80" aria-hidden="true">
+                  <path d="M30 13C20.5 13 14 21.3 14 32.2c0 12.2 7.6 22.5 18.2 30.6 3 2.3 7.3.1 7.3-3.7V20.4c0-4.2-3.4-7.4-9.5-7.4Z" />
+                  <path d="M50 13c9.5 0 16 8.3 16 19.2 0 12.2-7.6 22.5-18.2 30.6-3 2.3-7.3.1-7.3-3.7V20.4c0-4.2 3.4-7.4 9.5-7.4Z" />
+                  <path d="M40 38v27" />
+                  <path d="M28.5 24c-3.2 2.3-5.1 6-5.1 10.3" />
+                  <path d="M51.5 24c3.2 2.3 5.1 6 5.1 10.3" />
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <h3>Asistencial</h3>
-                <p>Enfoque integral del paciente renal con excelencia y compromiso.</p>
-              </div>
+              <span class="activity-copy">
+                <strong>Asistencial</strong>
+                <small>Enfoque integral del paciente renal con excelencia y compromiso.</small>
+              </span>
 
-              <button class="circle-arrow" type="button" aria-label="Ver detalle asistencial">→</button>
-            </article>
+              <span class="card-arrow">→</span>
+            </button>
 
-            <article class="activity-card clickable-card" data-activity="investigacion">
-              <div class="activity-icon microscope-icon">
+            <button class="activity-card clickable-card" data-activity="investigacion" type="button">
+              <span class="activity-icon microscope-icon">
                 <svg viewBox="0 0 64 64" aria-hidden="true">
                   <path d="M26 12l10 10-7 7-10-10 7-7Z" />
                   <path d="M32 28l10 10" />
@@ -201,15 +205,15 @@
                   <path d="M38 40h12v8H38z" />
                   <path d="M16 52h36" />
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <h3>Investigación</h3>
-                <p>Generamos conocimiento científico para impulsar nuevas terapias y soluciones.</p>
-              </div>
+              <span class="activity-copy">
+                <strong>Investigación</strong>
+                <small>Generamos conocimiento científico para impulsar nuevas terapias y soluciones.</small>
+              </span>
 
-              <button class="circle-arrow" type="button" aria-label="Ver detalle investigación">→</button>
-            </article>
+              <span class="card-arrow">→</span>
+            </button>
           </div>
 
           <div id="investigacion" class="tech-center">
@@ -250,42 +254,36 @@
               </div>
 
               <div class="network-core">
-                <svg viewBox="0 0 64 64" aria-hidden="true">
-                  <path d="M24 12c-7 0-12 6-12 14 0 9 5 16 12 22 2 2 5 0 5-3V17c0-3-2-5-5-5Z" />
-                  <path d="M40 12c7 0 12 6 12 14 0 9-5 16-12 22-2 2-5 0-5-3V17c0-3 2-5 5-5Z" />
-                  <path d="M29 30h6" />
-                  <path d="M32 30v20" />
+                <svg viewBox="0 0 80 80" aria-hidden="true">
+                  <path d="M30 13C20.5 13 14 21.3 14 32.2c0 12.2 7.6 22.5 18.2 30.6 3 2.3 7.3.1 7.3-3.7V20.4c0-4.2-3.4-7.4-9.5-7.4Z" />
+                  <path d="M50 13c9.5 0 16 8.3 16 19.2 0 12.2-7.6 22.5-18.2 30.6-3 2.3-7.3.1-7.3-3.7V20.4c0-4.2 3.4-7.4 9.5-7.4Z" />
+                  <path d="M40 38v27" />
                 </svg>
               </div>
-
-              <span class="connector connector-left-top"></span>
-              <span class="connector connector-left-bottom"></span>
-              <span class="connector connector-right-top"></span>
-              <span class="connector connector-right-bottom"></span>
             </div>
           </div>
 
           <div class="activity-column">
-            <article class="activity-card clickable-card" data-activity="innovacion">
-              <div class="activity-icon bulb-icon">
+            <button class="activity-card clickable-card" data-activity="innovacion" type="button">
+              <span class="activity-icon bulb-icon">
                 <svg viewBox="0 0 64 64" aria-hidden="true">
                   <path d="M22 28c0-7 5-12 10-12s10 5 10 12c0 5-3 8-6 11v5h-8v-5c-3-3-6-6-6-11Z" />
                   <path d="M27 50h10" />
                   <path d="M29 56h6" />
                   <path d="M16 28h-4M52 28h-4M21 15l-3-3M43 15l3-3" />
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <h3>Innovación</h3>
-                <p>Desarrollamos tecnologías de vanguardia para transformar descubrimientos en impacto.</p>
-              </div>
+              <span class="activity-copy">
+                <strong>Innovación</strong>
+                <small>Desarrollamos tecnologías de vanguardia para transformar descubrimientos en impacto.</small>
+              </span>
 
-              <button class="circle-arrow" type="button" aria-label="Ver detalle innovación">→</button>
-            </article>
+              <span class="card-arrow">→</span>
+            </button>
 
-            <article class="activity-card clickable-card" data-activity="servicios">
-              <div class="activity-icon hands-icon">
+            <button class="activity-card clickable-card" data-activity="servicios" type="button">
+              <span class="activity-icon hands-icon">
                 <svg viewBox="0 0 64 64" aria-hidden="true">
                   <path d="M19 30l9 9" />
                   <path d="M45 30l-9 9" />
@@ -295,16 +293,17 @@
                   <path d="M22 42l-8 8" />
                   <path d="M42 42l8 8" />
                 </svg>
-              </div>
+              </span>
 
-              <div>
-                <h3>Prestación de Servicios</h3>
-                <p>Colaboramos con instituciones y profesionales para brindar servicios especializados.</p>
-              </div>
+              <span class="activity-copy">
+                <strong>Prestación de Servicios</strong>
+                <small>Colaboramos con instituciones y profesionales para brindar servicios especializados.</small>
+              </span>
 
-              <button class="circle-arrow" type="button" aria-label="Ver detalle servicios">→</button>
-            </article>
+              <span class="card-arrow">→</span>
+            </button>
           </div>
+
         </div>
       </section>
 
