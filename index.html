@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08254b" />
 
   <title>Laboratorio de Nefrología Experimental A. Lanari</title>
 
-  <meta 
-    name="description" 
-    content="Sitio institucional del Laboratorio de Nefrología Experimental A. Lanari." 
+  <meta
+    name="description"
+    content="Sitio institucional del Laboratorio de Nefrología Experimental A. Lanari."
   />
 
   <link rel="icon" type="image/png" href="assets/favicon.png?v=5" />
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png?v=5" />
   <link rel="apple-touch-icon" href="assets/favicon.png?v=5" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -45,8 +53,8 @@
         <p>Ciencia que transforma la salud renal</p>
       </div>
 
-      <nav class="sidebar-nav">
-        <a href="#inicio" class="nav-link active">
+      <nav class="sidebar-nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link active" aria-current="true">
           <span>⌂</span>
           Inicio
         </a>
@@ -120,9 +128,9 @@
 
         <div class="hero-media reveal">
           <article class="media-card lab-card">
-            <img 
-              src="assets/lab-banner.jpg" 
-              alt="Laboratorio moderno con microscopios y equipamiento científico" 
+            <img
+              src="assets/lab-banner.jpg"
+              alt="Laboratorio moderno con microscopios y equipamiento científico"
             />
 
             <div class="image-fallback">
@@ -132,9 +140,9 @@
           </article>
 
           <article class="media-card hospital-card">
-            <img 
-              src="assets/hospital-lanari.jpg" 
-              alt="Vista exterior del Hospital A. Lanari" 
+            <img
+              src="assets/hospital-lanari.jpg"
+              alt="Vista exterior del Hospital A. Lanari"
             />
 
             <div class="image-fallback">
@@ -177,7 +185,7 @@
 
           <div class="activity-column">
             <button class="activity-card clickable-card" data-activity="asistencial" type="button">
-              <span class="activity-icon kidney-icon">
+              <span class="activity-icon">
                 <svg viewBox="0 0 80 80" aria-hidden="true">
                   <path d="M30 13C20.5 13 14 21.3 14 32.2c0 12.2 7.6 22.5 18.2 30.6 3 2.3 7.3.1 7.3-3.7V20.4c0-4.2-3.4-7.4-9.5-7.4Z" />
                   <path d="M50 13c9.5 0 16 8.3 16 19.2 0 12.2-7.6 22.5-18.2 30.6-3 2.3-7.3.1-7.3-3.7V20.4c0-4.2 3.4-7.4 9.5-7.4Z" />
@@ -196,7 +204,7 @@
             </button>
 
             <button class="activity-card clickable-card" data-activity="investigacion" type="button">
-              <span class="activity-icon microscope-icon">
+              <span class="activity-icon">
                 <svg viewBox="0 0 64 64" aria-hidden="true">
                   <path d="M26 12l10 10-7 7-10-10 7-7Z" />
                   <path d="M32 28l10 10" />
@@ -223,6 +231,17 @@
             </div>
 
             <div class="tech-network">
+
+              <svg class="hex-connector" viewBox="0 0 430 430" preserveAspectRatio="none" aria-hidden="true">
+                <line x1="215" y1="215" x2="215" y2="112" class="connector-line line-top" />
+                <line x1="215" y1="215" x2="137" y2="282" class="connector-line line-left" />
+                <line x1="215" y1="215" x2="293" y2="282" class="connector-line line-right" />
+                <circle cx="215" cy="215" r="5" class="hub-dot" />
+                <circle cx="215" cy="112" r="4" class="dot-top" />
+                <circle cx="137" cy="282" r="4" class="dot-left" />
+                <circle cx="293" cy="282" r="4" class="dot-right" />
+              </svg>
+
               <div class="network-ring"></div>
 
               <div class="hex-node node-top">
@@ -265,12 +284,12 @@
 
           <div class="activity-column">
             <button class="activity-card clickable-card" data-activity="innovacion" type="button">
-              <span class="activity-icon bulb-icon">
+              <span class="activity-icon">
                 <svg viewBox="0 0 64 64" aria-hidden="true">
-                  <path d="M22 28c0-7 5-12 10-12s10 5 10 12c0 5-3 8-6 11v5h-8v-5c-3-3-6-6-6-11Z" />
-                  <path d="M27 50h10" />
-                  <path d="M29 56h6" />
-                  <path d="M16 28h-4M52 28h-4M21 15l-3-3M43 15l3-3" />
+                  <rect x="18" y="18" width="28" height="28" rx="4" />
+                  <path d="M26 18v-6M38 18v-6M26 46v6M38 46v6" />
+                  <path d="M18 26h-6M18 38h-6M46 26h6M46 38h6" />
+                  <path d="M26 32h12M32 26v12" />
                 </svg>
               </span>
 
@@ -283,7 +302,7 @@
             </button>
 
             <button class="activity-card clickable-card" data-activity="servicios" type="button">
-              <span class="activity-icon hands-icon">
+              <span class="activity-icon">
                 <svg viewBox="0 0 64 64" aria-hidden="true">
                   <path d="M19 30l9 9" />
                   <path d="M45 30l-9 9" />
@@ -318,15 +337,15 @@
           </p>
         </div>
 
-        <div class="detail-tabs">
-          <button class="detail-tab active" data-tab="asistencial">Asistencial</button>
-          <button class="detail-tab" data-tab="investigacion">Investigación</button>
-          <button class="detail-tab" data-tab="innovacion">Innovación</button>
-          <button class="detail-tab" data-tab="servicios">Prestación de Servicios</button>
+        <div class="detail-tabs" role="tablist" aria-label="Seleccionar tipo de actividad">
+          <button class="detail-tab active" data-tab="asistencial" role="tab" aria-selected="true" aria-controls="panel-asistencial" id="tab-asistencial" type="button">Asistencial</button>
+          <button class="detail-tab" data-tab="investigacion" role="tab" aria-selected="false" aria-controls="panel-investigacion" id="tab-investigacion" type="button">Investigación</button>
+          <button class="detail-tab" data-tab="innovacion" role="tab" aria-selected="false" aria-controls="panel-innovacion" id="tab-innovacion" type="button">Innovación</button>
+          <button class="detail-tab" data-tab="servicios" role="tab" aria-selected="false" aria-controls="panel-servicios" id="tab-servicios" type="button">Prestación de Servicios</button>
         </div>
 
         <div class="detail-panels">
-          <article class="detail-panel active" data-panel="asistencial">
+          <article class="detail-panel active" data-panel="asistencial" role="tabpanel" id="panel-asistencial" aria-labelledby="tab-asistencial">
             <div>
               <h3>Asistencial</h3>
               <p>
@@ -344,7 +363,7 @@
             </ul>
           </article>
 
-          <article class="detail-panel" data-panel="investigacion">
+          <article class="detail-panel" data-panel="investigacion" role="tabpanel" id="panel-investigacion" aria-labelledby="tab-investigacion">
             <div>
               <h3>Investigación</h3>
               <p>
@@ -362,7 +381,7 @@
             </ul>
           </article>
 
-          <article class="detail-panel" data-panel="innovacion">
+          <article class="detail-panel" data-panel="innovacion" role="tabpanel" id="panel-innovacion" aria-labelledby="tab-innovacion">
             <div>
               <h3>Innovación</h3>
               <p>
@@ -379,7 +398,7 @@
             </ul>
           </article>
 
-          <article class="detail-panel" data-panel="servicios">
+          <article class="detail-panel" data-panel="servicios" role="tabpanel" id="panel-servicios" aria-labelledby="tab-servicios">
             <div>
               <h3>Prestación de Servicios</h3>
               <p>

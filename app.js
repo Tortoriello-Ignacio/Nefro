@@ -18,10 +18,13 @@ function setActiveLink() {
   });
 
   navLinks.forEach((link) => {
-    link.classList.remove("active");
+    const isActive = link.getAttribute("href") === `#${currentSection}`;
+    link.classList.toggle("active", isActive);
 
-    if (link.getAttribute("href") === `#${currentSection}`) {
-      link.classList.add("active");
+    if (isActive) {
+      link.setAttribute("aria-current", "true");
+    } else {
+      link.removeAttribute("aria-current");
     }
   });
 }
@@ -39,7 +42,9 @@ function revealOnScroll() {
 
 function activateDetailTab(tabName) {
   detailTabs.forEach((tab) => {
-    tab.classList.toggle("active", tab.dataset.tab === tabName);
+    const isActive = tab.dataset.tab === tabName;
+    tab.classList.toggle("active", isActive);
+    tab.setAttribute("aria-selected", isActive ? "true" : "false");
   });
 
   detailPanels.forEach((panel) => {
@@ -58,10 +63,27 @@ function scrollToDetailSection() {
   });
 }
 
+function pulseCard(card) {
+  card.classList.remove("card-pulse");
+  // restart the animation even if it was just triggered
+  void card.offsetWidth;
+  card.classList.add("card-pulse");
+
+  card.addEventListener(
+    "animationend",
+    () => card.classList.remove("card-pulse"),
+    { once: true }
+  );
+}
+
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    navLinks.forEach((item) => item.classList.remove("active"));
+    navLinks.forEach((item) => {
+      item.classList.remove("active");
+      item.removeAttribute("aria-current");
+    });
     link.classList.add("active");
+    link.setAttribute("aria-current", "true");
   });
 });
 
@@ -82,6 +104,7 @@ clickableCards.forEach((card) => {
     if (!activity) return;
 
     activateDetailTab(activity);
+    pulseCard(card);
     scrollToDetailSection();
   });
 });
@@ -92,10 +115,21 @@ detailTabs.forEach((tab) => {
   });
 });
 
-window.addEventListener("scroll", () => {
-  setActiveLink();
-  revealOnScroll();
-});
+// Throttle scroll-driven work to one update per animation frame.
+let scrollScheduled = false;
+
+function onScroll() {
+  if (scrollScheduled) return;
+  scrollScheduled = true;
+
+  requestAnimationFrame(() => {
+    setActiveLink();
+    revealOnScroll();
+    scrollScheduled = false;
+  });
+}
+
+window.addEventListener("scroll", onScroll, { passive: true });
 
 window.addEventListener("load", () => {
   setActiveLink();
